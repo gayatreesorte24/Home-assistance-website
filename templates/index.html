@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <!-- BASICS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Kosher & Clean</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/isotope.css') }}" media="screen" />
+
+  <link rel="stylesheet" href="{{ url_for('static',filename='js/fancybox/jquery.fancybox.css') }}" type="text/css" media="screen" />
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap-theme.css') }}">
+  <link href="{{ url_for('static',filename='css/responsive-slider.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/font-awesome.min.css') }}">
+  <!-- skin -->
+  <link rel="stylesheet" href="{{ url_for('static',filename='skin/default.css') }}">
+
+</head>
+
+<body>
+
+
+  <div class="header">
+    <section id="header" class="appear">
+
+      <div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="fa fa-bars color-white"></span>
+          </button>
+          <h1><a class="navbar-brand" href="{{url_for('index') }} data-0="line-height="90px" data-300="line-height:50px;">Kosher & Clean
+            </a></h1>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+            <li class="active"><a href="#header">Home</a></li>
+            <li><a href="#section-about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#section-works">Photo Gallery</a></li>
+            <li><a href="#section-contact">Contact</a></li>
+            <li><a href="{{ url_for('signup') }}">Sign-up</a></li>
+          </ul>
+        </div>
+        <!--/.navbar-collapse -->
+      </div>
+
+
+    </section>
+  </div>
+
+
+  <div class="slider">
+    <div id="about-slider">
+      <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators visible-xs">
+          <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-slider" data-slide-to="1"></li>
+          <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="item active" style="background-image: url(../static/img/slider/slider1.jpg);">
+            <div class="carousel-caption">
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+                <h2>Kosher & Clean-we love cleaniness</h2>
+              </div>
+              <div class="col-md-10 col-md-offset-1">
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                  <p>"We must experience Heaven on earth; May your homes, surroundings and work places portray a safe clean environment"</p>
+                </div>
+              </div>
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
+                <form class="form-inline">
+                  <div class="form-group">
+
+
+                  </div>
+                  <div class="form-group">
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" style="background-image: url(../static/img/slider/slider2.jpg);">
+            <div class="carousel-caption">
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.0s">
+                <h2>Let us be part of your clean home</h2>
+              </div>
+              <div class="col-md-10 col-md-offset-1">
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                  <p>Cleanliness is being careful to keep or make clean</p>
+                </div>
+              </div>
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.6s">
+                <form class="form-inline">
+                  <div class="form-group">
+
+                  </div>
+                  <div class="form-group">
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+          <i class="fa fa-angle-left"></i>
+        </a>
+
+        <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </div>
+      <!--/#carousel-slider-->
+    </div>
+    <!--/#about-slider-->
+  </div>
+  <!--/#slider-->
+
+  <!--about-->
+  <section id="section-about">
+    <div class="container">
+      <div class="about">
+        <div class="row mar-bot40">
+          <div class="col-md-offset-3 col-md-6">
+            <div class="title">
+              <div class="wow bounceIn">
+
+                <h2 class="section-heading animated" data-animation="bounceInUp">Kosher & Clean</h2>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="row-slider">
+            <div class="col-lg-6 mar-bot30">
+              <div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
+                <div class="slides" data-group="slides">
+                  <ul>
+
+                    <div class="slide-body" data-group="slide">
+                      <li><img alt="" class="img-responsive" src="{{ url_for('static',filename='img/ocomp/ocomp1.jpg') }}" width="100%" height="350" /></li>
+                      <li><img alt="" class="img-responsive" src="{{ url_for('static',filename='img/ocomp/ocomp2.jpg') }}" width="100%" height="350" /></li>
+                      <li><img alt="" class="img-responsive" src="{{ url_for('static',filename='img/ocomp/ocomp3.jpg') }}" width="100%" height="350" /></li>
+
+                    </div>
+                  </ul>
+                  <a class="slider-control left" href="#" data-jump="prev"><i class="fa fa-angle-left fa-2x"></i></a>
+                  <a class="slider-control right" href="#" data-jump="next"><i class="fa fa-angle-right fa-2x"></i></a>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 ">
+              <div class="company mar-left10">
+                <h4>Cleaning & organizing is a practice not a project</h4>
+                <p>The company has created in 2019 with a mission to help people across the globe with cleanliess and home assistance. we have following services</p>
+              </div>
+              <div class="list-style">
+                <div class="row">
+                  <div class="col-lg-6 col-sm-6 col-xs-12">
+                    <ul>
+                      <li>Waterproofing</li>
+                      <li>Car cleaning</li>
+                      <li>Pest control</li>
+
+                    </ul>
+                  </div>
+                  <div class="col-lg-6 col-sm-6 col-xs-12">
+                    <ul>
+                      <li>Deep cleaning</li>
+                      <li>AC servicing</li>
+                      <li>Salon Care</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!--/about-->
+
+  <!-- spacer section:testimonial -->
+  <section id="testimonials-3" class="section" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="align-center">
+            <div class="testimonial pad-top40 pad-bot40 clearfix">
+              <h5>
+                "We cannot claim to love God, if we continue to live in unclean environment and pollute the waters.
+                God gave man and woman the authority to rule every living creature and to safeguard the living resources.
+                We have a duty to perform and responsibility to fulfil this role"
+              </h5>
+              <br />
+              <span class="author">&mdash; Lailah Gifty Akita </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- services -->
+  <section id="services" class="section pad-bot5 bg-white">
+    <div class="container">
+      <div class="row mar-bot5">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <div class="wow bounceIn" data-animation-delay="7.8s">
+
+              <h2 class="section-heading animated">Our Services</h2>
+              <h4>Cleanliness is next to messiness</h4>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mar-bot40">
+        <div class="col-lg-4">
+          <div class="wow bounceIn">
+            <div class="align-center">
+
+              <div class="wow rotateIn">
+                <div class="service-col">
+                  <div class="service-icon">
+                    <figure><i class="fa fa-cog"></i></figure>
+                  </div>
+                  <h2><a href="{{ url_for('signup') }}">Waterproofing</a></h2>
+                  <p>Specialised waterproofing agents are available with us.. Why to search..!!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4">
+          <div class="wow bounceIn">
+            <div class="align-center">
+
+              <div class="wow rotateIn">
+                <div class="service-col">
+                  <div class="service-icon">
+                    <figure><i class="fa fa-cog"></i></figure>
+                  </div>
+                  <h2><a href="{{ url_for('signup') }}">Car Cleaning</a></h2>
+                  <p>Make your car... people say "wow"..!! </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4">
+          <div class="wow bounceIn">
+            <div class="align-center">
+
+              <div class="wow rotateIn">
+                <div class="service-col">
+                  <div class="service-icon">
+                    <figure><i class="fa fa-cog"></i></figure>
+                  </div>
+                  <h2><a href="{{ url_for('signup') }}">Pest control</a></h2>
+                  <p>Huff...!!..Tired with the pests... No worry .. we have the solution.. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4">
+          <div class="wow bounceIn">
+            <div class="align-center">
+
+              <div class="wow rotateIn">
+                <div class="service-col">
+                  <div class="service-icon">
+                    <figure><i class="fa fa-cog"></i></figure>
+                  </div>
+                  <h2><a href="{{ url_for('signup') }}">Deep Cleaning</a></h2>
+                  <p>Let your home be the place for holiness...And we can help..!! </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4">
+          <div class="wow bounceIn">
+            <div class="align-center">
+
+              <div class="wow rotateIn">
+                <div class="service-col">
+                  <div class="service-icon">
+                    <figure><i class="fa fa-cog"></i></figure>
+                  </div>
+                  <h2><a href="{{ url_for('signup') }}">AC Servicing</a></h2>
+                  <p>Help...!! We have services for you to have relief in hot summer day....!!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4">
+          <div class="wow bounceIn">
+            <div class="align-center">
+
+              <div class="wow rotateIn">
+                <div class="service-col">
+                  <div class="service-icon">
+                    <figure><i class="fa fa-cog"></i></figure>
+                  </div>
+                  <h2><a href="{{ url_for('signup') }}">Salon Care</a></h2>
+                  <p> Why to wonder places when you can have the salon at home with your leisure....!!  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </section>
+  <!--/services-->
+
+  <!-- spacer section:testimonial -->
+  <section id="testimonials" class="section" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="align-center">
+            <div class="testimonial pad-top40 pad-bot40 clearfix">
+              <h5>
+                Cleanliness is the Hallmark of perfect standards and the best quality inspector is th conscience
+              </h5>
+              <br />
+              <span class="author">&mdash; J.R.D Tata</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- team -->
+  <section id="team" class="team-section appear clearfix">
+    <div class="container">
+
+      <div class="row mar-bot10">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <div class="wow bounceIn">
+
+              <h2 class="section-heading animated" data-animation="bounceInUp">Our Team</h2>
+              <p>Teamwork divides the task and multiplies success</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-center mar-bot45">
+        <div class="col-md-4">
+          <div class="wow bounceIn" data-animation-delay="4.8s">
+            <div class="team-member">
+              <div class="profile-picture">
+                <figure><img src="{{ url_for('static',filename='img/team/team1.png') }}" alt=""></figure>
+                <div class="profile-overlay"></div>
+                <div class="profile-social">
+                  <div class="icons-wrapper">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-detail">
+                <h4>Gayatree Sorte</h4>
+                <span>gayatree.sorte1997@gmail.com</span>
+              </div>
+              <div class="team-bio">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+
+          <div class="wow bounceIn">
+            <div class="team-member">
+              <div class="profile-picture">
+                <figure><img src="{{ url_for('static',filename='img/team/team2.jpg') }}" alt=""></figure>
+                <div class="profile-overlay"></div>
+                <div class="profile-social">
+                  <div class="icons-wrapper">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-detail">
+                <h4>Madhura Saraf</h4>
+                <span>madhurasaraf1140@gmail.com</span>
+              </div>
+              <div class="team-bio">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="wow bounceIn">
+            <div class="team-member">
+              <div class="profile-picture">
+                <figure><img src="{{ url_for('static',filename='img/team/team3.jpg') }}" alt=""></figure>
+                <div class="profile-overlay"></div>
+                <div class="profile-social">
+                  <div class="icons-wrapper">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-detail">
+                <h4>Sanika Wawage</h4>
+                <span>sanika.wawage19@gmail.com</span>
+              </div>
+              <div class="team-bio">
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="wow bounceIn" data-animation-delay="4.8s">
+            <div class="team-member">
+              <div class="profile-picture">
+                <figure><img src="{{ url_for('static',filename='img/team/team4.jpg') }}" alt=""></figure>
+                <div class="profile-overlay"></div>
+                <div class="profile-social">
+                  <div class="icons-wrapper">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="team-detail">
+                <h4>Shravani Indurkar</h4>
+                <span>shravniindurkar118@gmail.com</span>
+              </div>
+              <div class="team-bio">
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- /team -->
+
+  <!-- spacer section:stats -->
+  <section id="parallax1" class="section pad-top40 pad-bot40 mar-bot20" data-stellar-background-ratio="0.5">
+    <div class="container ">
+      <div class="align-center pad-top40 pad-bot40">
+        <h4 class="color-white pad-top50">We after on</h4>
+        <p class="color-white">"Neatness and cleanliness is not a function of how rich or poor you are but that of mentality and principle"</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- spacer section:testimonial -->
+  <section id="testimonials-2" class="section" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="align-center">
+            <div class="testimonial pad-top40 pad-bot40 clearfix">
+              <h5>
+                "Cleanliness is not next to godliness, it is godliness. When the mind is cleansed of all primordial impurities, then and then only real godliness of actual practical potential begins to manifest"
+              </h5>
+              <br />
+              <span class="author">&mdash; Abhijit Naskar</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- section works -->
+  <section id="section-works" class="section appear clearfix">
+    <div class="container">
+
+      <div class="row mar-bot40">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <h2 class="section-heading animated" data-animation="bounceInUp">Photo Gallery</h2>
+            <p>"Happy customers..!!!"</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <nav id="filter" class="col-md-12 text-center">
+          <ul>
+            <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
+
+          </ul>
+        </nav>
+        <div class="col-md-12">
+          <div class="row">
+            <div class="portfolio-items isotopeWrapper clearfix" id="3">
+
+              <article class="col-md-4 isotopeItem webdesign">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                    <img src="{{ url_for('static',filename='img/photogallery/salon.jpg')  }}" alt="welcome" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <h5><a href="#">Happy to help</a></h5>
+                      <a href="{{ url_for('static',filename='img/photogallery/salon.jpg') }}" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col-md-4 isotopeItem photography">
+                <div class="portfolio-item">
+                  <div class="wow bounceIn">
+                    <img src="{{ url_for('static',filename='img/photogallery/salon1.jpeg') }}" alt="" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <h5><a href="#">Happy to help</a></h5>
+                      <a href="{{ url_for('static',filename='img/photogallery/salon1.jpeg') }}" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+
+              <article class="col-md-4 isotopeItem photography">
+                <div class="portfolio-item">
+                  <div class="wow rotateInDownRight">
+                    <img src="{{ url_for('static',filename='img/photogallery/cleaning1.jpeg') }}" alt="" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <h5><a href="#">Happy to help</a></h5>
+                      <a href="{{ url_for('static',filename='img/photogallery/cleaning1.jpeg') }}" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col-md-4 isotopeItem print">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft">
+                    <img src="{{ url_for('static',filename='img/photogallery/pestcontrol.jpg') }}" alt="" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <h5><a href="#">Happy to help</a></h5>
+                      <a href="{{ url_for('static',filename='img/photogallery/pestcontrol.jpg') }}" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col-md-4 isotopeItem photography">
+                <div class="portfolio-item">
+                  <div class="wow bounceIn">
+                    <img src="{{ url_for('static',filename='img/photogallery/car1.jpeg') }}" alt="" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <h5><a href="#">Happy to help</a></h5>
+                      <a href="{{ url_for('static',filename='img/photogallery/car1.jpeg') }}" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col-md-4 isotopeItem webdesign">
+                <div class="portfolio-item">
+                  <div class="wow rotateInDownRight">
+                    <img src="{{ url_for('static',filename='img/photogallery/car2.jpg') }}" alt="" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <h5><a href="#">Happy to help</a></h5>
+                      <a href="{{ url_for('static',filename='img/photogallery/car2.jpeg') }}" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col-md-4 isotopeItem print">
+                <div class="portfolio-item">
+                  <div class="wow rotateInUpLeft">
+                    <img src="{{ url_for('static',filename='img/photogallery/project.jpg') }}" alt="" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <h5><a href="#">Happy to see</a></h5>
+                      <a href="{{ url_for('static',filename='img/photogallery/project.jpg') }}" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col-md-4 isotopeItem photography">
+                <div class="portfolio-item">
+                  <div class="wow bounceIn">
+                    <img src="{{ url_for('static',filename='img/photogallery/ac.jpg') }}" alt="" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <h5><a href="#">Happy to Help</a></h5>
+                      <a href="{{ url_for('static',filename='img/photogallery/ac.jpg') }}" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="col-md-4 isotopeItem print">
+                <div class="portfolio-item">
+                  <div class="wow rotateInDownRight">
+                    <img src="{{ url_for('static',filename='img/photogallery/car.jpeg') }}" alt="" />
+                  </div>
+                  <div class="portfolio-desc align-center">
+                    <div class="folio-info">
+                      <h5><a href="#">Happy to help</a></h5>
+                      <a href="{{ url_for('static',filename='img/photogallery/car.jpeg') }}" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="parallax2" class="section parallax" data-stellar-background-ratio="0.5">
+    <div class="align-center pad-top40 pad-bot30">
+      <h4 class="color-white pad-top50">The middle of that asteroid field</h4>
+      <p class="color-white">"CLEANLINESS FREAKS are one of the most dirtiest beings on Earth! And PERFECTIONISTS, THE most boring!"</p>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section id="section-contact" class="section appear clearfix">
+    <div class="container">
+
+      <div class="row mar-bot40">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <h2 class="section-heading animated" data-animation="bounceInUp">Contact us</h2>
+            .
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
+                data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4"
+                data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
+                placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+
+            <div class="text-center"><button type="submit" class="line-btn green">Send Message</button></div>
+          </form>
+        </div>
+        <!-- ./span12 -->
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="footer" class="section footer">
+    <div class="container">
+      <div class="row animated opacity mar-bot0" data-andown="fadeIn" data-animation="animation">
+        <div class="col-sm-12 align-center">
+          <ul class="social-network social-circle">
+            <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row align-center copyright">
+        <div class="col-sm-12">
+          <p>&copy; Kosher & Clean</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+
+  <script src="{{ url_for('static',filename='js/modernizr-2.6.2-respond-1.1.0.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.easing.1.3.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.isotope.min.js' ) }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.nicescroll.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/fancybox/jquery.fancybox.pack.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/skrollr.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.scrollTo.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.localScroll.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/stellar.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/responsive-slider.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.appear.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/grid.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/wow.min.js') }}"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+  <script src="{{ url_for('static',filename='contactform/contactform.js') }}"></script>
+
+</body>
+
+</html>

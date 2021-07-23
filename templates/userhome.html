@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <!-- BASICS -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Kosher & Clean</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/isotope.css') }}" media="screen" />
+
+  <link rel="stylesheet" href="{{ url_for('static',filename='js/fancybox/jquery.fancybox.css') }}" type="text/css" media="screen" />
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap-theme.css') }}">
+  <link href="{{ url_for('static',filename='css/responsive-slider.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/font-awesome.min.css') }}">
+  <!-- skin -->
+  <link rel="stylesheet" href="{{ url_for('static',filename='skin/default.css') }}">
+
+</head>
+
+<body>
+
+
+  <div class="header">
+    <section id="header" class="appear">
+
+      <div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,0,0,0.3);" data-300="line-height:60px; height:60px; background-color:rgba(0,0,0,1);">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="fa fa-bars color-white"></span>
+          </button>
+          <h1><a class="navbar-brand" href="{{url_for('index') }} data-0="line-height="90px" data-300="line-height:50px;">Kosher & Clean
+            </a></h1>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav" data-0="margin-top:20px;" data-300="margin-top:5px;">
+
+
+            <li><a href="#services">Service</a></li>
+            <li><a href="#line-pricing">Pricing</a></li>
+            <li><a href="#section-contact">Contact</a></li>
+            <li><a href="{{ url_for('index') }}">Logout</a></li>
+          </ul>
+        </div>
+        <!--/.navbar-collapse -->
+      </div>
+
+
+    </section>
+  </div>
+
+
+  <div class="slider">
+    <div id="about-slider">
+      <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators visible-xs">
+          <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-slider" data-slide-to="1"></li>
+          <li data-target="#carousel-slider" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="item active" style="background-image: url(../static/img/slider/slider1.jpg);">
+            <div class="carousel-caption">
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.3s">
+                <h2>Kosher & Clean-we love cleaniness</h2>
+              </div>
+              <div class="col-md-10 col-md-offset-1">
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                  <p>"We must experience Heaven on earth; May your homes, surroundings and work places portray a safe clean environment"</p>
+                </div>
+              </div>
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.9s">
+                <form class="form-inline">
+                  <div class="form-group">
+
+
+                  </div>
+                  <div class="form-group">
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" style="background-image: url(../static/img/slider/slider2.jpg);">
+            <div class="carousel-caption">
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.0s">
+                <h2>Let us be part of your clean home</h2>
+              </div>
+              <div class="col-md-10 col-md-offset-1">
+                <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.6s">
+                  <p>Cleanliness is being careful to keep or make clean</p>
+                </div>
+              </div>
+              <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="1.6s">
+                <form class="form-inline">
+                  <div class="form-group">
+
+                  </div>
+                  <div class="form-group">
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
+          <i class="fa fa-angle-left"></i>
+        </a>
+
+        <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </div>
+      <!--/#carousel-slider-->
+    </div>
+    <!--/#about-slider-->
+  </div>
+  <!--/#slider-->
+
+
+
+
+
+  <!-- services -->
+  <section id="services" class="section pad-bot5 bg-white">
+    <div class="container">
+      <div class="row mar-bot5">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <div class="wow bounceIn" data-animation-delay="7.8s">
+
+              <h2 class="section-heading animated">Our Services</h2>
+              <h4>Cleanliness is next to messiness</h4>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mar-bot40">
+        <div class="col-lg-4">
+          <div class="wow bounceIn">
+            <div class="align-center">
+
+              <div class="wow rotateIn">
+                <div class="service-col">
+                  <div class="service-icon">
+                    <figure><i class="fa fa-cog"></i></figure>
+                  </div>
+                  <h2><a href="#line-pricing">Waterproofing</a></h2>
+                  <p>Specialised waterproofing agents are available with us.. Why to search..!!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4">
+          <div class="wow bounceIn">
+            <div class="align-center">
+
+              <div class="wow rotateIn">
+                <div class="service-col">
+                  <div class="service-icon">
+                    <figure><i class="fa fa-cog"></i></figure>
+                  </div>
+                  <h2><a href="#line-pricing">Car Cleaning</a></h2>
+                  <p>Make your car... people say "wow"..!! </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4">
+          <div class="wow bounceIn">
+            <div class="align-center">
+
+              <div class="wow rotateIn">
+                <div class="service-col">
+                  <div class="service-icon">
+                    <figure><i class="fa fa-cog"></i></figure>
+                  </div>
+                  <h2><a href="#line-pricing">Pest control</a></h2>
+                  <p>Huff...!!..Tired with the pests... No worry .. we have the solution.. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4">
+          <div class="wow bounceIn">
+            <div class="align-center">
+
+              <div class="wow rotateIn">
+                <div class="service-col">
+                  <div class="service-icon">
+                    <figure><i class="fa fa-cog"></i></figure>
+                  </div>
+                  <h2><a href="#line-pricing">Deep Cleaning</a></h2>
+                  <p>Let your home be the place for holiness...And we can help..!! </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4">
+          <div class="wow bounceIn">
+            <div class="align-center">
+
+              <div class="wow rotateIn">
+                <div class="service-col">
+                  <div class="service-icon">
+                    <figure><i class="fa fa-cog"></i></figure>
+                  </div>
+                  <h2><a href="#line-pricing">AC Servicing</a></h2>
+                  <p>Help...!! We have services for you to have relief in hot summer day....!!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4">
+          <div class="wow bounceIn">
+            <div class="align-center">
+
+              <div class="wow rotateIn">
+                <div class="service-col">
+                  <div class="service-icon">
+                    <figure><i class="fa fa-cog"></i></figure>
+                  </div>
+                  <h2><a href="#line-pricing">Salon Care</a></h2>
+                  <p> Why to wonder places when you can have the salon at home with your leisure....!!  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </section>
+  <!--/services-->
+
+  <!-- spacer section:testimonial -->
+  <section id="testimonials" class="section" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="align-center">
+            <div class="testimonial pad-top40 pad-bot40 clearfix">
+              <h5>
+                Cleanliness is the Hallmark of perfect standards and the best quality inspector is th conscience
+              </h5>
+              <br />
+              <span class="author">&mdash; J.R.D Tata</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section id="line-pricing" class="line-section line-center">
+    <div class="container pad-top50">
+      <div class="row mar-bot10 ">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <div class="wow bounceIn">
+
+              <h2 class="section-heading animated" data-animation="bounceInUp">Pricing Table</h2>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="pricing-table-wrap" data-scrollreveal="enter top over 0.5s after 0.5s">
+          <ul class="line-highlight">
+            <li class="line-head-row">
+              Waterproofing
+            </li>
+            <li class="line-price-row">
+              <p>
+                <span class="symbol">Rs</span>
+                <span>600</span>
+              </p>
+              <small>Per square feet</small>
+            </li>
+            <li>
+              Cementitious Waterproofing.
+            </li>
+            <li>
+              Liquid Waterproofing Membrane
+            </li>
+              <li>
+              Bituminous waterproofing
+            </li>
+
+            <li class="line-btn-row">
+              <a href="{{ url_for('thank') }}" class="line-btn green">Book Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="pricing-table-wrap" data-scrollreveal="enter top over 0.5s after 0.5s">
+          <ul class="line-highlight">
+            <li class="line-head-row">
+              Car Cleaning
+            </li>
+            <li class="line-price-row">
+              <p>
+                <span class="symbol">Rs</span>
+                <span>1000</span>
+              </p>
+              <small>Per time</small>
+            </li>
+            <li>
+              Car Type
+            </li>
+            <li>
+              Eco Car Wash
+            </li>
+            <li>
+              Water car wash
+            </li>
+            <li class="line-btn-row">
+              <a href="{{ url_for('thank') }}" class="line-btn green">Book Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="col-md-4">
+        <div class="pricing-table-wrap" data-scrollreveal="enter top over 0.5s after 0.5s">
+          <ul class="line-highlight">
+            <li class="line-head-row">
+              Pest Control
+            </li>
+            <li class="line-price-row">
+              <p>
+                <span class="symbol">Rs</span>
+                <span>1100</span>
+              </p>
+              <small>Per time</small>
+            </li>
+            <li>
+              According to house type
+            </li>
+            <li>
+              1 BHK
+            </li>
+            <li>
+              2 BHK
+            </li>
+            <li class="line-btn-row">
+              <a href="{{ url_for('thank') }}" class="line-btn green">Book Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="col-md-4">
+        <div class="pricing-table-wrap" data-scrollreveal="enter top over 0.5s after 0.5s">
+          <ul class="line-highlight">
+            <li class="line-head-row">
+              Deep Cleaning
+            </li>
+            <li class="line-price-row">
+              <p>
+                <span class="symbol">Rs</span>
+                <span>5800</span>
+              </p>
+              <small>Per time</small>
+            </li>
+            <li>
+              According to house Type
+            </li>
+            <li>
+              1 BHK
+            </li>
+            <li>
+              2 BHK
+            </li>
+            <li class="line-btn-row">
+              <a href="{{ url_for('thank') }}" class="line-btn green">Book Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="col-md-4">
+        <div class="pricing-table-wrap" data-scrollreveal="enter top over 0.5s after 0.5s">
+          <ul class="line-highlight">
+            <li class="line-head-row">
+              AC Servicing
+            </li>
+            <li class="line-price-row">
+              <p>
+                <span class="symbol">Rs</span>
+                <span>500</span>
+              </p>
+              <small>Per time</small>
+            </li>
+            <li>
+              Specialized Agents
+            </li>
+            <li>
+              Happy to help
+            </li>
+            <li>
+              Efficient Servicing
+            </li>
+            <li class="line-btn-row">
+              <a href="{{ url_for('thank') }}" class="line-btn green" action="/doSendMail">Book Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="pricing-table-wrap" data-scrollreveal="enter top over 0.5s after 0.5s">
+          <ul class="line-highlight">
+            <li class="line-head-row">
+              Salon Care
+            </li>
+            <li class="line-price-row">
+              <p>
+                <span class="symbol">Rs</span>
+                <span>varies</span>
+              </p>
+              <small>per package</small>
+            </li>
+            <li>
+              Hair treatment
+            </li>
+            <li>
+              nail spa
+            </li>
+            <li>
+              Many More
+            </li>
+            <li class="line-btn-row">
+              <a href="{{ url_for('thank') }}" class="line-btn green">Book Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- spacer section:testimonial -->
+  <section id="testimonials-2" class="section" data-stellar-background-ratio="0.5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="align-center">
+            <div class="testimonial pad-top40 pad-bot40 clearfix">
+              <h5>
+                "Cleanliness is not next to godliness, it is godliness. When the mind is cleansed of all primordial impurities, then and then only real godliness of actual practical potential begins to manifest"
+              </h5>
+              <br />
+              <span class="author">&mdash; Abhijit Naskar</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+  <!-- contact -->
+  <section id="section-contact" class="section appear clearfix">
+    <div class="container">
+
+      <div class="row mar-bot40">
+        <div class="col-md-offset-3 col-md-6">
+          <div class="section-header">
+            <h2 class="section-heading animated" data-animation="bounceInUp">Contact us</h2>
+            .
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
+                data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4"
+                data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
+                placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+
+            <div class="text-center"><button type="submit" class="line-btn green">Send Message</button></div>
+          </form>
+        </div>
+        <!-- ./span12 -->
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="footer" class="section footer">
+    <div class="container">
+      <div class="row animated opacity mar-bot0" data-andown="fadeIn" data-animation="animation">
+        <div class="col-sm-12 align-center">
+          <ul class="social-network social-circle">
+            <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row align-center copyright">
+        <div class="col-sm-12">
+          <p>&copy; Kosher & Clean</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+
+  <script src="{{ url_for('static',filename='js/modernizr-2.6.2-respond-1.1.0.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.easing.1.3.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.isotope.min.js' ) }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.nicescroll.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/fancybox/jquery.fancybox.pack.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/skrollr.min.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.scrollTo.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.localScroll.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/stellar.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/responsive-slider.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/jquery.appear.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/grid.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+  <script src="{{ url_for('static',filename='js/wow.min.js') }}"></script>
+  <script>
+    wow = new WOW({}).init();
+  </script>
+  <script src="{{ url_for('static',filename='contactform/contactform.js') }}"></script>
+
+</body>
+
+</html>
